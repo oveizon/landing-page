@@ -1,0 +1,155 @@
+
+body{
+    margin: auto;
+    justify-content: center;
+    
+}
+
+
+header{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-color:hsl(193, 100%, 96%) ;
+    font-size: 18px;
+    color:hsl(208, 11%, 55%);
+    padding: 0 10% 0 10%;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header{
+    0%{left:-1000px;}
+    100%{left:0px;}
+}
+
+
+
+main{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color:hsl(208, 11%, 55%); 
+    font-size: 18px;
+    text-align: center;
+
+}
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    color:hsl(208, 11%, 55%); 
+    font-size: 18px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1440px){
+    /*desktop screens*/
+    header{
+        background-image: url("images/bg-hero-desktop.svg");
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    /*mobile screens*/
+    header{
+        background-image: url("images/bg-hero-mobile.svg");
+    }
+    
+    body,#ltdiv,footer,header{ 
+          width: 100%;
+          display: block;
+          box-sizing: border-box;
+        
+    }
+
+}
+
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+h3,h4{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    text-align: left;
+}
+.wh{
+    color: white;
+}
+
+button{
+    background-color: hsl(322, 100%, 66%);
+    text-align: center;
+    border-color: hsl(322, 100%, 66%) ;
+    border-radius: 20px;
+    cursor:pointer;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+button:hover{
+    opacity: 0.7;
+    transform: rotateY(180deg);
+}
+
+#ltdiv{
+    background-color: white;
+    border-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 60%;
+}
+
+a{
+    margin: auto ;
+    padding: 5px;
+}
+
+.line{
+    display: flex;
+}
+.block{
+    display:table-column;
+}
+.left{
+    float: right;
+}
+
+
+.mid{
+    background-color:white;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    bottom: -6vh;
+    width: 40%;
+    margin: auto;
+    animation-name: mid;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mid{
+    0%{left:-1000px;}
+    100%{left:0px;}
+}
+
+img{
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+
+img:hover{
+    transform: rotateY(180deg);
+}
